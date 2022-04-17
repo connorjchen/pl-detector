@@ -10,14 +10,14 @@ ACCESS_TOKEN = os.getenv('ACCESS_TOKEN')
 
 
 def get_file(link, language):
-    time.sleep(1)
+    time.sleep(2)
     response = requests.request("GET", link)
 
     print(response.json().keys())
 
     download_url = response.json()["download_url"]
     name = response.json()["name"]
-    time.sleep(1)
+    time.sleep(2)
 
     file_contents = requests.request("GET", download_url)
 
@@ -32,7 +32,7 @@ def get_by_language(language, num_iterations):
         'Authorization': f'Token {ACCESS_TOKEN}'
     }
 
-    time.sleep(1)
+    time.sleep(2)
     response = requests.request("GET", url, headers=headers)
 
     loaded_response = response.json()
