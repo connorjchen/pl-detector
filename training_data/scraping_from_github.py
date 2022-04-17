@@ -51,8 +51,6 @@ def get_by_language(language, num_iterations):
             break
 
 
-# "python", "java",
-
-accepted_languages = ["c++", "c", "ocaml"]
+accepted_languages = ["python", "java", "c++", "c", "ocaml"]
 for i in accepted_languages:
     get_by_language(i, 8)
