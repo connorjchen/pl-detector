@@ -1,3 +1,4 @@
+from tkinter import Y
 import requests
 import os
 from dotenv import load_dotenv
@@ -9,7 +10,7 @@ load_dotenv()
 ACCESS_TOKEN = os.getenv('ACCESS_TOKEN')
 
 
-def get_file(link, language):
+def get_file_from_link(link):
     time.sleep(4)
     response = requests.request("GET", link)
 
@@ -17,7 +18,13 @@ def get_file(link, language):
         while "documentation_url" in response.json():
             time.sleep(10)
             response = requests.request("GET", link)
-            print("trying again...")
+            print(f"trying again for link {link}")
+    return response
+
+
+# Include sha for unique idenitification purposees
+def get_file(link, language, sha):
+    response = get_file_from_link(link)
 
     print(response.json().keys(), "got file", response.json()["download_url"])
 
@@ -26,7 +33,7 @@ def get_file(link, language):
     time.sleep(10)
 
     file_contents = requests.request("GET", download_url)
-    with open(f'{language}/{name}.txt', "w") as tempfile:
+    with open(f'{language}/{name}-sha-{sha}.txt', "w") as tempfile:
         tempfile.write(file_contents.text)
 
 
@@ -64,6 +71,26 @@ def get_by_language(language, num_iterations):
 # Python, Java, C++
 
 
-accepted_languages = ["c", "ocaml"]
+def get_repos(language, search_query, num_repos=3):
+    url = f"https://api.github.com/search/repositories?q={search_query}+language:{language}"
+    response = get_file_from_link(url)
+
+    response_json = response.json()
+
+    # Write down json_received for debugging purposes
+    with open("sample.txt", "w") as testfile:
+        testfile.write(json.dumps(response_json))
+
+    repo_name = response_json[full_name]
+
+    files_to_get_by_language_url = f"https://api.github.com/search/code?q=+language:{language}+repo:{repo_name}"
+
+    files_to_get = get_file_from_link(files_to_get_by_language_url).json()
+
+    for file in files_to_get["items"]:
+        get_file(file["url"], language, file["sha"])
+
+
+accepted_languages = ["java", "c++", "python", "c", "ocaml"]
 for i in accepted_languages:
     get_by_language(i, 100)
