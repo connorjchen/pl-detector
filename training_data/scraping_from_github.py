@@ -111,7 +111,7 @@ def get_repos(language, search_query, num_repos=3):
 
 
 # "c", "java", "python", "c++"
-accepted_languages = ["c", "java", "python", "c++", "ocaml"]
+accepted_languages = ["ocaml"]
 
 for i in accepted_languages:
-    get_repos(i, "codeforces")
+    get_repos(i, "code")
