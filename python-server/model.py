@@ -10,6 +10,11 @@ langs = ["java", "python", "ocaml", "c", "c++"]
 
 
 def predict_lang(contents):
+    if contents == "":
+        return {
+            "nb_model": "",
+            "logreg_model": "",
+        }
 
     arr = np.array([])
     arr = np.append(arr, contents.count("#"))

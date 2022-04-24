@@ -10,8 +10,8 @@ let predictlang = () => {
     });
 
     function success_response(response, response_code) {
-        $("#predict-lang-nb-model").text(response['nb_model'])
-        $("#predict-lang-logreg-model").text(response['logreg_model'])
+        $("#predict-lang-nb-model").html(response['nb_model'] == "" ? "": `<img src="/static/images/${response['nb_model']}.png" />`)
+        $("#predict-lang-logreg-model").html(response['logreg_model'] == "" ? "": `<img src="/static/images/${response['logreg_model']}.png" />`)
     }
 }
 
