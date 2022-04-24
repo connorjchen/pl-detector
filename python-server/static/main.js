@@ -10,8 +10,7 @@ let predictlang = () => {
     });
 
     function success_response(response, response_code) {
-        console.log(response['predict-lang'])
-        $("#predict-lang").text(response['predict-lang'])
+        $("#predict-lang").text(response['nb_model'])
     }
 }
 

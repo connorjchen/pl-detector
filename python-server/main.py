@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import json
+import model
 
 
 app = Flask(__name__)
@@ -20,9 +21,11 @@ def process_info():
     # print(request.data)
     body = json.loads(request.data)
     contents = body.get("contents")
-    predictedlanguage = json.dumps({"predict-lang": contents})
+    predictedlanguage = json.dumps({"predict-lang": str(len(contents))})
+    predicted_dict = model.predict_lang(contents)
+    print(predicted_dict)
 
-    return predictedlanguage, 200
+    return predicted_dict, 200
 
 
 if __name__ == "__main__":
