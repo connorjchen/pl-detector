@@ -9,6 +9,7 @@
 }
 
 
+
 img{
   width: 5rem;
   margin-left: auto;
@@ -25,8 +26,8 @@ img{
 }
 
 :root {
-  --card-height: 65vh;
-  --card-width: calc(var(--card-height) / 1.5);
+  --card-height: 20rem;
+  --card-width: 80rem;
 }
 
 
@@ -111,4 +112,15 @@ a {
 
 *{
   color: white;
+}
+#cds-logo{
+  display: inline-block;
+}
+
+h1{
+  display: inline-block;
+}
+
+.title{
+font-size: 5rem;
 }
