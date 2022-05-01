@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,14 +11,19 @@
     <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
     <title>Pl Predictors</title>
 </head>
+
 <body>
-<!-- <img id="cds-logo" src = "{{url_for('static', filename='images/cds-logo.png')}}"> -->
-<h1>PL    L<img id="cds-logo" src = "{{url_for('static', filename='images/cds-logo.png')}}">VERS   </h1>
+    <!-- <img id="cds-logo" src = "{{url_for('static', filename='images/cds-logo.png')}}"> -->
+    <img id="cds-logo" src="{{url_for('static', filename='images/cds-logo.png')}}">
 
-<textarea class = "card" id="pl-textarea" oninput="predictlang()"></textarea>
+    <textarea class="card" id="pl-textarea" oninput="predictlang()"></textarea>
 
-<p> Naive Bayes Prediction: <div class = "predict-lang" id =predict-lang-nb-model></div></p>
-<p> Logistic Regression Prediction: <div class = "predict-lang" id =predict-lang-logreg-model></div></p>
+    <p> Naive Bayes Prediction:
+    <div class="predict-lang" id=predict-lang-nb-model></div>
+    </p>
+    <p> Logistic Regression Prediction:
+    <div class="predict-lang" id=predict-lang-logreg-model></div>
+    </p>
 
 </body>
 
