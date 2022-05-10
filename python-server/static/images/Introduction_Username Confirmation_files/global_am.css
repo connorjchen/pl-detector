@@ -1,0 +1,467 @@
+@charset "utf-8";
+* {
+	margin: 0px auto;
+	padding: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000;
+}
+
+html { /* This CSS tag is for the grey background of IB site */
+	background: transparent url(../images/newimages/mainTemplateBkgrnd_en.gif) repeat-x fixed;
+	line-height: 14pt;
+}
+
+p, div, ul, li, td {
+	line-height: 14pt;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+option {
+	padding-right: 5px;
+}
+
+#printheader {
+    display:none;
+}
+
+#headeram { 
+	background: transparent url(../images/acctMgmt/titleAccountManagement.jpg) no-repeat top right;
+	width: 574px;
+}
+
+#headerambeta {
+	background: transparent url(../images/acctMgmt/header_AM_Beta.jpg) no-repeat top right;
+	width: 574px;
+}
+
+#headerreg { 
+	background: transparent url(../images/acctMgmt/titleRegistration.jpg) no-repeat top right;
+	width: 574px;
+}
+
+#headeretm { 
+	background: transparent url(../images/acctMgmt/titleEmployeeTrackManagement.jpg) no-repeat top right;
+	width: 574px;
+}
+
+/*.Background { background: #F0F0F0; } */
+
+/* Main Header Frame style    NOT NEEDED ANYMORE
+.TOPBackground {
+	background: transparent url(../images/acctMgmt/tableBkgrndTop.gif) repeat-x; 
+}*/
+
+.tdBack { /* This CSS tag is for the grey background of IB site */
+	/* background: transparent url(../images/acctMgmt/mainTemplateBkgrnd.gif) repeat-x; */
+	background: #F0F0F0;
+}
+
+hr {color:#666; height:1px; } 
+
+p {
+    	text-align: justify;
+    	color: #000;
+	margin: 5px 0px;
+    	padding: 5px;
+} 
+
+.CellHeader {
+/*	color: ; declared in child pages */
+/*	background:  declared in child pages */
+	text-align: center;
+	width: 100%;
+        height: 25px;
+	margin: 0px;
+	padding: 5px;
+}
+
+.MainHeader, .MainHeader2 {
+	font-size:12px;
+	font-weight:bold;
+	text-align: center;
+	color: #000 ;
+	padding-top: 15px;
+}
+.MainHeader2 {
+	color: #999 ;
+}
+.SubHeader {
+	font-size:12px;
+	font-weight:bold;
+	color: #FFF;
+}
+
+.TableOutline, .TableOutlineL {
+	background: #FFF;
+	border: 1px solid #999;
+	padding: 0px;
+	margin: 5px 20px;
+}
+
+.TableOutlineL {
+	padding: 5px;
+	left: auto; 
+	right: auto; 
+	margin: 0px auto;
+}
+
+.TableBorder {
+	border: 1px solid #CCC;
+}
+
+.PageTitle {
+	font-size: 14px; 
+	font-weight:bold;
+	color: #000;
+	margin: 10px 0px 5px 0px;
+	padding: 5px 10px;
+}
+
+.SubHeaderCurrentAccount, .selectedaccount {
+	font-size: 12px ;
+	font-weight:bold;
+	color: #000;
+	margin: 0px;
+	padding: 20px 0px 0px 7px;
+}
+
+.selectedaccount {
+        color: #D32033;
+}
+
+.CellSubheader {
+	font-size: 12px ;
+	font-weight:bold;
+	color: #000;
+    text-align: inherit;
+/*	background:   declared  in child page*/
+	margin: 15px 0px 5px 15px; 
+	padding: 1px 0px 0px 10px;
+}
+
+.CellTitle, .CellTitle2, .CellTitle3, .CellSubTitle{
+	font-size:  12px; 
+	font-weight: bold;
+	text-align: inherit;
+	margin: 15px 0px 5px 15px;
+	padding: 1px 10px 0px 10px;
+	/*background:  #71818e;	  declared  in the child CSS*/
+	/*color: #FFF;  declared  in the child CSS*/
+
+}
+.CellOn, .CellOff, .CellSubOn, .CellSubOnGr, .CellSubOnRd, .CellAttention, .CellSubAttention, .CellSubOff, .CellSubOffNoBottom, .cellSubG, .cellSubB, .cellSubOr, .cellSubReverse{
+	margin: 5px 20px;
+	padding: 5px;
+	border-bottom: 1px solid #999;
+	/* background: #D4D8DC;  declared  in the child CSS*/
+	/* color: #000;  declared  in the child CSS*/
+}
+
+.CellOff {
+	background: #FFF;
+        border-bottom: 1px solid #CCC;
+}
+
+.CellSubOn {
+        background-color: #E5E5E5;  /*light grey*/
+	border-bottom: 1px solid #CCC;
+}
+
+.CellSubOnGr {
+	background-color: #AADDC4; /*greenAAFFAA*/
+	border-bottom: 1px solid #CCC;
+}
+
+.CellSubOnRd {
+	background-color: #FFADC8; /*red*/
+	border-bottom: 1px solid #CCC;
+}
+
+.CellSubG {
+	background-color: #CCFFCC; /*red*/
+	border-bottom: 1px solid #CCC;
+}
+
+.CellSubB {
+	background-color: #CCFFFF; /*red*/
+	border-bottom: 1px solid #CCC;
+}
+
+.CellSubOr {
+	background-color: #FFCC66; /*red*/
+	border-bottom: 1px solid #CCC;
+}
+
+.cellSubReverse {
+	background-color: #666; /*red*/
+        color: #FFFFFF;
+        font-weight: bold;
+	border-bottom: 1px solid #CCC;
+}
+
+.CellAttention {
+	background-color: #FFFFCC;  /*light yellow*/
+	margin: 0px 40px 0px 15px;
+	border-bottom: 1px solid #999;
+}
+
+.CellSubAttention {
+	background-color: #FFFFCC;  /*light yellow*/
+	border-bottom: 1px solid #999;
+}
+
+.CellSubOff, .CellSubOffNoBottom {
+	background-color: #FFF;
+	margin: 0px 40px 0px 15px;
+    border-bottom: 1px solid #CCC;
+}
+
+.CellSubOffNoBottom {
+    border-bottom: none;
+}
+
+
+.CellTitleB {
+	font-size: 11px ;
+	font-weight:bold;
+	color: #000;
+	background: #CCC;
+	margin: 15px 0px 5px 15px;
+	padding: 5px 10px;
+	border-bottom: 1px solid #666;
+}
+
+.CellSpacer {
+	font-size: normal 11px Verdana, Arial, Helvetica, sans-serif;
+	color: #000;
+	background-color: #666;
+	margin: 0px;
+	padding: 0px;
+	border-bottom: 1px solid #999;
+}
+
+.helplink {
+    text-align: right;
+    margin-right: -5px;
+    margin-top: -25px;
+    z-index: 5;
+}
+
+.titleMain {
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif;
+	color: #999;
+}
+
+
+.subHeading {
+	font: bold 14px Arial, Verdana, Georgia, sans-serif; 
+	color: #000;
+	background: #CCC;
+	padding: 5px;
+}
+
+.feeInput {
+    border: 1px solid #999;
+}
+
+/* LEGAL DOCS STYLES */
+.title {
+	font: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+}
+
+.subtitle {
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* END LEGAL DOCS STYLES */
+
+
+.errorMsg, .errorMsg2 {  
+	color: #FF0000;
+	/*background: #FFFFCC;*/
+	font-weight: normal;
+	padding: 0px;
+	margin: 5px 10px;
+	border: none;
+}
+
+.errorMsg2 {  
+	padding: 0px;
+	border: 1px solid #FF0000;
+}
+
+.textBigger { 
+	font-size: 12px; 
+	line-height: 15px;
+}
+
+.textSmall { 
+	font-size: 10px; 
+	line-height: 12px;
+}
+
+.textItalic {
+	font-style: italic; 
+}
+
+.textBold {
+	font-weight: bold;
+}
+
+.textBigBold {
+	font-size: 12px; 
+	line-height: 15px;
+	font-weight: bold;
+}
+
+.greenEmph {  
+	font-weight: bolder; 
+	color: #00FF00; 
+	font-size: 10pt;
+}
+
+.redEmph { 
+	color: #FF0000; 
+	font-size: 10pt;
+}
+
+.redlarge { 
+	font-size: larger; 
+	font-weight: bold; 
+	text-transform: capitalize; 
+	color: #CC0033;
+}
+
+.Attention, .AttentionLC, .AttentionG { 
+	font-weight: bold; 
+	background: #FFFFCC;
+	border: 1px solid #999;
+	color: #000;
+	margin: 5px 10px;
+	padding: 5px;
+}
+
+.AttentionG { 
+	background: #E5E5E5;
+}
+
+.AttentionLC { 
+	font-weight: normal; 
+}
+
+ul, ol {
+	text-align: left;
+	margin: 5px 25px;
+	padding: 0px;
+}
+
+div.clientDiv {
+    position:absolute;
+    width:100px;
+    height:auto;
+    max-height:50%;
+    overflow:auto;
+    background:#DDD;
+    border:1px solid #000;
+    margin:0px;
+    padding:5px;
+    visibility:hidden;
+}
+div.clientDiv ul {
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+}
+div.clientDiv ul li.selected { background-color: #ffb;}
+
+div.clientDiv ul li {
+    list-style-type:none;
+    display:block;
+    margin:0;
+    padding:2px;
+    height:20px;
+    cursor:pointer;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------*/
+/* |                                            START OF TAGS OLD TAGS FOR WEBSITE                                     |*/
+/* ---------------------------------------------------------------------------------------------------------------------*/
+
+H4 {
+    color: #666699 
+}
+
+.red {
+
+    font-size: 10pt;
+    color: #FF3333; 
+}
+
+a:hover.legaldocument {
+        font-size: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #CC3333;  /*red ??????????????? why red*/
+}
+
+.legalbold, .legalboldUnderline{
+        font-weight: bold;
+
+}
+
+.legaldocument {
+    font-size: 10px;
+	padding: 5px 10px;
+}
+.legaldocumentUnderline {
+	font-size: 10px;
+	padding: 0px 10px;
+	text-decoration: underline;
+}
+.legalbold {
+        text-decoration: none;
+}
+.legalboldUnderline {
+        text-decoration: underline;
+}
+
+.agreementBox {
+	width: 98%;
+	height: 250px;
+	overflow: auto;
+	border: 1px solid #999;
+	padding: 5px;
+	background: #FFF;
+}
+
+
+
+.tab a, .tab a:active {
+	text-decoration:none;
+	font:bold 12px Arial, Helvetica, sans-serif;
+	color:#06F;
+	text-align:center;
+	padding:10px 8px 5px 8px;
+	margin:0 12px;
+	background-color: #e7e6e6;
+	border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+}
+
+.inactive a {
+	
+        background: #ccc;
+        font:normal;
+}

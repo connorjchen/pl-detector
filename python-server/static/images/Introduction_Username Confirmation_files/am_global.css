@@ -1,0 +1,358 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+* {
+margin: 0;
+padding: 0;
+}
+
+.programmers{
+background-color:#99FF99;
+border:1px solid #009933
+}
+
+html { /* This CSS tag is for the grey background of IB site */
+background: transparent url(../images/newimages/mainTemplateBkgrnd_en.gif) repeat-x fixed;
+}
+
+
+body {
+margin: 0;
+padding: 0;
+/*top   right  bottom left*/
+text-align: center;
+font: normal 11px Verdana, Arial, Georgia, sans-serif;
+line-height:18px;
+color: #333;
+}
+
+#container {
+margin: 0 auto;
+height: auto;
+width: 950px;
+margin-bottom:50px;
+border: 0;
+text-align: left;
+padding-bottom: 20px;
+padding-top: 0px;
+}
+
+
+#contents {
+margin: 0 auto;
+padding-bottom: 20px;
+background-color:#fff;
+-moz-border-radius-bottomleft: 5px;
+-moz-border-radius-bottomright: 5px;
+-webkit-border-radius-bottomleft: 5px;
+-webkit-border-radius-bottomright: 5px;
+-khtml-border-radius-bottomleft: 5px;
+-khtml-border-radius-bottomright: 5px;
+border-bottom:1px solid #999;
+border-left:1px solid #999;
+border-right:1px solid #999;
+}
+
+#video {
+position:absolute;
+top:100px;
+left:450px;
+height: auto;
+z-index:90000;
+
+}
+
+#header { /*this header css is the IBGmain and en/individual graphic */
+left:auto;
+right:auto;
+height:73px;
+margin: 0px auto;
+width: 950px;
+margin-top:50px;
+text-align: right;
+}
+.toprightmenu {
+position:absolute;
+margin: -50px 0 0 745px;
+z-index:5;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+background-color:#ccc;
+padding:5px 10px
+}
+
+.deleteapp {
+position:absolute;
+margin: 110px 0 0 820px;
+z-index:5;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+background-color:#ccc;
+padding:5px;
+font-size:9px
+}
+
+.toprightmenu a:link, .toprightmenu a:visited,
+.deleteapp a:link, .deleteapp a:visited  {
+color: #000;
+text-decoration:none
+}
+.toprightmenu a:hover, .toprightmenu a:active,
+.deleteapp a:hover, .deleteapp a:active {
+color:#666;
+text-decoration:underline
+}
+
+.toggleControl a:link{
+    text-decoration:none
+}
+
+#logo {
+position:absolute;
+margin: -50px 0 0 10px;
+z-index:5000;
+}
+
+
+#mainbody{
+/*position:absolute; */
+left:auto;
+right:auto;
+margin: 0 auto;
+height: auto;
+width: 900px;
+padding:20px 20px 20px;
+/*padding-top:20px;  */
+
+z-moz-border-radius: 5px;
+z-webkit-border-radius: 5px;
+zbackground-color:#e9e8e8;
+
+
+}
+
+#mainBodyBottom{
+left: auto;
+right:auto;
+width: 950px;
+padding-top:10px;
+background:  url(../images/newimages/mainTempBodBot_3.png) no-repeat bottom left;
+height: 20px;
+text-align: justify;
+
+}
+
+.registration {
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+background:#e9e8e8}
+
+.submenu {
+zbackground:  url(../images/newimages/bkgrnd_submenu.gif) repeat-x 0 0;
+background-color:#ccc;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+}
+
+.registration td, .submenu td {
+padding:5px 10px
+
+}
+
+.required {color:#FF0000}
+
+.selectedaccount {
+        color: #D32033;
+}
+
+pre .required {color:#FF0000; font: normal 11px Verdana, Arial, Georgia, sans-serif;}
+
+h3 {
+font:bold 16px Verdana, Arial, Helvetica, sans-serif;
+color:#666;
+padding-bottom:10px
+}
+
+h4 {
+font:bold 14px Verdana, Arial, Helvetica, sans-serif;
+color:#666
+}
+
+h3 .explain, h4 .explain{
+font: normal 11px Verdana, Arial, Georgia, sans-serif;
+margin:1px;
+border:black;
+}
+
+a, a:visited{
+text-decoration: underline;
+color: #0000FF;
+}
+
+a:hover {
+text-decoration: none;
+color: #666;
+}
+
+a img, a:visited img, a:hover img, a:link img, a:active img {
+text-decoration: none;
+border: none;
+outline:0px;
+}
+
+a:focus, a:focus img{outline:0px;}
+
+
+.round_corners{
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+}
+
+.round_left_top{
+-moz-border-radius-topleft: 5px;
+-webkit-border-top-left-radius: 5px;}
+
+.round_right_top{
+-moz-border-radius-topright: 5px;
+-webkit-border-top-right-radius: 5px;
+}
+
+.round_left_bottom{
+-moz-border-radius-bottomleft: 5px;
+-webkit-border-bottom-left-radius: 5px;}
+
+.round_right_bottom{
+-moz-border-radius-bottomright: 5px;
+-webkit-border-bottom-right-radius: 5px;
+}
+
+tr.border_bottom td {
+    border-bottom: 1px dotted #CCC;
+}
+
+tr.border_top td {
+    border-top: 1px dotted #CCC;
+}
+
+tr.border_top_bottom td {
+ border-top: 1px dotted #CCC;
+ border-bottom: 1px dotted #CCC;
+}
+
+tr.noborder_bottom td {
+border-bottom:0px;
+}
+
+.attention2{
+background: transparent url(../images/newimages/information.png) no-repeat 5px 7px;
+height:32px;
+padding-left:35px;
+padding-right:35px;
+}
+
+.textSmall {
+ font-size: 10px;
+ line-height: 12px;
+}
+
+.attention_smaller{
+background: transparent url(../images/newimages/information_24x24.png) no-repeat 5px 7px;
+height:32px;
+padding-left:35px;
+
+}
+
+.attention_border{
+border:1px solid #007be1;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+}
+.warning, .warning_text{
+background: #ffda8c url(../images/newimages/bkgrnd_warning.gif) repeat-x 0 0;
+border:1px solid #FFCC66;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+}
+.warning_text{ /*Used around text only in a span tag */
+padding: 5px;
+line-height: 30px
+}
+.kaspars_warning{
+font: normal 12px Verdana, Arial, Georgia, sans-serif;
+line-height:14px;
+color:#ff0000
+}
+.hiddencode {
+position:absolute;
+margin: -35px 0 0 450px;
+z-index:5;
+font: normal 9px Verdana, Arial, Georgia, sans-serif;
+color: #fff;
+}
+
+tr.tableheader td{
+background-color:#CCC
+}
+
+.organgeborder, tr.organgeborder td{
+border:1px solid #FFCC66;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;}
+
+.error{
+background: #ffc64c url(../images/newimages/bkgrnd_error.gif) no-repeat 0 0;
+padding-left:35px;
+-moz-border-radius-bottomright: 10px;
+-webkit-border-bottom-right-radius: 10px;
+-moz-border-radius-bottomleft: 10px;
+-webkit-border-bottom-left-radius: 10px;
+border:1px solid #ff9600;
+border-top:0px;
+}
+
+.error_field{
+background: #FFF url(../images/newimages/bkgrnd_error_field_2.gif) no-repeat 0 0;
+border:1px solid #ff0000;
+padding:3px 3px 3px 25px
+}
+
+option {border-bottom:1px dotted #CCC;}
+
+input, select, textarea {border:1px solid #666;padding:3px}
+
+textarea:focus, input:focus,  input:hover {background-color:#d2fbaa;}/*e3eef7*/
+
+input[type="radio"]{border:none}
+
+.agreementbox {
+width: 98%;
+height: 250px;
+overflow: auto;
+border: 1px solid #999;
+padding: 5px;
+background: #FFF;
+}
+.agreementbox ul{
+padding-left:35px}
+
+ul{padding-left:20px}
+
+
+#printheader {
+display:none;
+}
+
+.ib-logo-white
+{
+	background-image: url("https://www.interactivebrokers.com/images/2015/template/logo-ib-ibkr-txtwht.svg");
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	display: block;
+	height: 33px;
+	margin: 4px auto 0;
+	width: 260px;
+}
+

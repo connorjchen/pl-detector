@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+a, a:visited, a.blue, a.blue:visited {
+	text-decoration: underline;
+	color: #0000FF;
+   	 font-size:11px;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #666;
+}
+
+a:focus {
+	text-decoration:none
+}
+
+a img, a:visited img, a:hover img, a:link img, a:active img {
+	text-decoration: none;
+	border: none;
+   	 font-size:11px;
+} 
+
+.CellHeader {
+	color: #FFF;
+	background: #4b5c70; /*dark blue*/
+}
+
+.CellHeader a, .CellHeader a:visited , .CellHeader a:hover, .CellHeader a:link, .CellHeader a:active {
+	text-decoration: none;
+	color: #FFF;
+    	font-size:11px;
+} 
+
+.CellHeader a:hover {
+	text-decoration: underline;
+} 
+
+.CellSubheader {
+	background: #ccc;
+}
+
+.CellOn, .CellSubOn, .CellAttention, .CellSubAttention, .CellSubOffNoBottom{
+	background: #D4D8DC;  /*light blue grey*/
+	color: #000;
+}
+
+.CellTitle, .CellTitle2, .CellTitle3, .CellSubTitle{
+	background:  #71818e;
+	color: #FFF;
+}
+.progressbar {
+	background: #71818e url(../images/acctMgmt/tableBkgrnd.gif) repeat;
+	height: 15px;
+}

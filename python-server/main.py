@@ -5,13 +5,17 @@ import model
 
 app = Flask(__name__)
 
-
 @app.route("/")
+def temp():
+    print("some request")
+    return "temp", 404
+
+@app.route("/cds-datathon/")
 def scuffed_editor():
     return render_template("main.html"), 404
 
 
-@app.route("/api/backend/predictlang/", methods=["POST"])
+@app.route("/cds-datathon/api/backend/predictlang/", methods=["POST"])
 def process_info():
     """
     Predicts language of a given text file
@@ -29,4 +33,4 @@ def process_info():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5050, debug=True)
